@@ -24,7 +24,7 @@ module.exports = function(config) {
       'karma-jasmine',
       'karma-coverage'
     ],
-    reporters: ['dots','progress'],
+    reporters: ['progress','coverage'],
 
     // coverageReporter: {
     //   dir: 'coverage/',
