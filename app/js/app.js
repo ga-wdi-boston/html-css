@@ -21,5 +21,5 @@ App.greet = function(string){
 };
 
 $(document).ready(function(){
-  trace('hello world');
+  // trace('hello world');
 });

@@ -18,18 +18,13 @@ module.exports = function(config) {
     ],
     exclude: [],
     port: 9876,
-    browsers: [
-      'PhantomJS',
-      'Chrome'
-    ],
+    browsers: ['PhantomJS'],
     plugins: [
       'karma-phantomjs-launcher',
       'karma-jasmine',
-      'karma-coverage',
-      'karma-nyan-reporter',
-      'karma-chrome-launcher'
+      'karma-coverage'
     ],
-    reporters: ['nyan', 'coverage'],
+    reporters: ['dots','progress'],
 
     // coverageReporter: {
     //   dir: 'coverage/',
