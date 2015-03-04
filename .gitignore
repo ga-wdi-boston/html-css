@@ -3,3 +3,5 @@ bower_components
 .project
 dist
 coverage
+.tmp
+.sass-cache
