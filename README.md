@@ -59,6 +59,9 @@ In pairs, create a new webpage using the raw content found inside `exercise-app/
 * At a high level, CSS tends to follow two big rules:
   1. More specific selectors (generally) beat less speciic ones.
   2. Late instructions overwrite earlier ones; things "cascade".
+* To add CSS to a page, either include it
+    1. Between two `<style>` tags, typically in the the `<head>` of the document.
+    2. In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is `<link rel="stylesheet" type="text/css" href="...">`, where 'href' is set to the location of the desired stylesheet.
 
 #### Exercise
 In pairs, take the webpage from the previous exercise and add the following styling to it, using whatever CSS you want:
