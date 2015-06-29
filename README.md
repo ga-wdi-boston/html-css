@@ -14,12 +14,14 @@ Students should, at the end of the lesson, be able to:
 
 ## Overview
 
-Let's go over the basics of HTML and CSS! Most of you should have some experience with this stuff already, since you've all gone through [Dash](dash.generalassemb.ly) and each built a simple website as part of your admissions process.
+Let's go over the basics of HTML and CSS! Most of you should have some experience with this stuff already, since you should've all gone through [Dash](dash.generalassemb.ly) and each built a simple website as part of your admissions process.
 
 ### What is the Web?
 * The web is a *service*, provided through a backbone known as the *internet*.
-  <aside>This works very similarly to how Netflix's DVD plan is provided through the US postal service. The postal service takes care of figuring out how to get parcels from point A to point B - all Netflix has to do is make sure they play by the rules of the system.</aside>
-* A service implicitly has two kinds of parties involved: clients, who make requests, and servers, who respond to those requests.
+
+  >This works very similarly to how Netflix's DVD plan is provided through the US postal service. The postal service takes care of figuring out how to get parcels from point A to point B - all Netflix has to do is make sure they play by the rules of the system.
+
+* A service always has two kinds of parties involved: clients, who make requests, and servers, who respond to those requests.
 * In the case of the web, the client is the browser - it requests webpages (documents composed of HTML, CSS, and JS) and then "renders" the page for the user to see and interact with.
 * Interestingly, this means that when two people are looking at the same webpage, they are not in the same place; instead they are looking at two completely separate copies of the same document.
 
@@ -49,7 +51,7 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
 
 * HTML5 encourages using "semantic" tags - tags whose names reflect their content and role within the page. Examples of this include `<section>`, `<header>`, and `<nav>`.
 
-#### Exercise
+#### Lab :: HTML
 In pairs, create a new webpage using the raw content found inside `exercise-app/index.html`. Try to use semantic tags where possible.
 
 ### CSS
@@ -63,7 +65,7 @@ In pairs, create a new webpage using the raw content found inside `exercise-app/
     1. Between two `<style>` tags, typically in the the `<head>` of the document.
     2. In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is `<link rel="stylesheet" type="text/css" href="...">`, where 'href' is set to the location of the desired stylesheet.
 
-#### Exercise
+#### Lab :: CSS
 In pairs, take the webpage from the previous exercise and add the following styling to it, using whatever CSS you want:
 * Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it larger than the rest of the text on the page.
 * The font for the whole page should be 'arial', except for the recipe title (which should be in 'cursive').
