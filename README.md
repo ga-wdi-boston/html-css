@@ -61,9 +61,11 @@ In pairs, create a new webpage using the raw content found inside `exercise-app/
 * CSS emerged in the late 90s as a way to make styling webpages easier. Essentially, its philosophy was to separate styling entirely from each element, and come up with general styling rules that can be applied anywhere.
 * The general syntax of CSS is "selector : { some_set_of_style_rules }".
 * At a high level, CSS tends to follow two big rules:
-  1. More specific selectors (generally) beat less specific ones.
+  1. More specific selectors beat less specific ones.
+
     > There is actually a strict scoring system which determines just how 'specific' a selector is, based on its contents: inline style attributes get 1000 pts each; IDs get 100 pts each; attributes, classes, and pseudo-classes get 10 pts each; elements and pseudo-elements get 1 pt each. For a more detailed explanation, see [this blog post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) on CSS specificity.
-  2. Late instructions overwrite earlier ones; things "cascade".
+
+  2. Late instructions overwrite earlier ones - things "cascade".
 * To add CSS to a page, either include it
     1. Inline, within an element.
     2. Between two `<style>` tags, typically in the the `<head>` of the document.
