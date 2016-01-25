@@ -55,8 +55,38 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
 
 * HTML5 encourages the use of _semantic_ tags - tags whose names reflect their content and role within the page. Examples of this include `<section>`, `<header>`, and `<nav>`.
 
-#### Lab :: HTML
-In pairs, create a new webpage using the raw content found inside `exercise-app/index.html`. Try to use semantic tags where possible.
+#### Lab : HTML
+In squads, you're going to collaboratively create a new webpage using the raw content found inside `cookie-site/index.html` (using semantic tags where possible).
+
+To start, have one member of each squad fork and clone this repository, and then create two new branches: `gh-pages` and `html`. Then, check out the `html` branch and begin working there.
+
+Once you finish writing your HTML, add the changes you've made to `index.html` and make a commit. Then, run the following commands:
+
+1. `git checkout master`
+  > Move to the master branch
+
+2. `git merge html`
+  > Add the changes on the `html` branch to the `master` branch. Depending on what you've done, you may get a warning about a 'merge conflict' - if that happens, flag down one of the consultants.
+
+3. `git push origin master`
+  > Push your updated `master` branch up to GitHub
+
+At this point, the `master` branch on your GitHub fork should include your new HTML page.
+
+The last thing we're going to do is **deploy** (i.e. host) this web page through a service that GitHub provides called GitHub pages. To do this, go through the following steps.
+
+1. `git checkout gh-pages`
+  > Move to the `gh-pages` branch that you created earlier.
+
+2. `git merge master`
+  > Add the new changes that have been made on `master` to the `gh-pages` branch on your local repo.
+
+3. `git push origin gh-pages`
+  > Push your updated `gh-pages` branch up to GitHub
+
+This process should add your HTML code to the `gh-pages` branch of your GitHub repo. Now, GitHub can work its magic and make that page visible on the web. If you go to the URL `yourUsername.github.io/html-css/cookie-site` in your browser, you should be able to see your page!
+
+> As a general rule, the formula for a GitHub Pages URL is `yourUsername.github.io/name-of-your-repository/path-to-location-of-index.html`
 
 ### CSS
 * In the early days of the web, people used to style their pages using explicit styling tags : `<b>` for bold, `<i>` for italics, etc. But this was very inflexible - you could only control as many attributes as there were tags.
