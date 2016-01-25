@@ -133,12 +133,39 @@ To add CSS to a page, either include it
 
  where 'href' is set to the location of the desired stylesheet.
 
-#### Lab :: CSS
-In pairs, take the webpage from the previous exercise and add the following styling to it, using whatever CSS you want:
+#### Lab : CSS
+Go back to your `master` branch, and then and create (and check out) a new branch called `css`. In your squads, you'll be taking the webpage from the previous exercise and add the following styling to it, using any CSS you like:
 * Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it larger than the rest of the text on the page.
 * The font for the whole page should be 'arial', except for the recipe title (which should be in 'cursive').
 * All text in the page should be centered.
-* In the ingredients list, give each ingredient a unique color; any time that ingredient appears in the recipe, make it that same color. (HINT: use Sublime text's keyboard shortcuts to speed up the process)
+* In the ingredients list, give each ingredient a unique color; any time that ingredient appears in the recipe, make it that same color.
+  > Use Atom's multiple-selection shortcut to speed up the process!
+
+Once you finish, 'add' the changes you've made to `index.html` and `style.css` and make a commit. Then, run the following commands:
+
+1. `git checkout master`
+  > Move to the master branch
+
+2. `git merge css`
+  > Add the changes on the `css` branch to the `master` branch. Again, depending on what you've done, you may get a warning about a 'merge conflict' - if that happens, **please flag down one of the consultants**.
+
+3. `git push origin master`
+  > Push your updated `master` branch up to GitHub
+
+At this point, the `master` branch on your GitHub fork should include your new CSS styling.
+
+Finally, let's add the new styling to our deployed webpage on GitHub Pages.
+
+1. `git checkout gh-pages`
+  > Move to the `gh-pages` branch that you created earlier.
+
+2. `git merge master`
+  > Add the new changes that have been made on `master` to the `gh-pages` branch on your local repo.
+
+3. `git push origin gh-pages`
+  > Push your updated `gh-pages` branch up to GitHub
+
+Your website ( `yourUsername.github.io/html-css/cookie-site` ) should now include CSS styling!
 
 #### Bonus (Optional Section)
 If you're feeling good about all of this, do some googling and see if you can find a way to style the first letter of every step in the recipe using *only CSS* - no writing new HTML!
