@@ -89,8 +89,10 @@ This process should add your HTML code to the `gh-pages` branch of your GitHub r
 > As a general rule, the formula for a GitHub Pages URL is `yourUsername.github.io/name-of-your-repository/path-to-location-of-index.html`
 
 ### CSS
-* In the early days of the web, people used to style their pages using explicit styling tags : `<b>` for bold, `<i>` for italics, etc. But this was very inflexible - you could only control as many attributes as there were tags.
-* CSS emerged in the late 90s as a way to make styling webpages easier. Essentially, its philosophy was to separate styling entirely from each element, and come up with general styling rules that can be applied anywhere.
+In the early days of the web, people used to style their pages using explicit styling tags : `<b>` for bold, `<i>` for italics, etc. But this was very inflexible - you could only control as many attributes as there were tags.
+
+CSS emerged in the mid-90s as a way to make styling webpages easier. Its core idea was replace explicit styling in HTML with _styling rules_ which could be applied to multiple elements; this would have the benefits of (a) reducing duplication, and (b) separating styling instructions from content, making debugging easier.
+
 * The general syntax of CSS is "selector : { some_set_of_style_rules }".
 * At a high level, CSS tends to follow two big rules:
   1. More specific selectors beat less specific ones.
