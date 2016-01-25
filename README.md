@@ -17,15 +17,16 @@ Students should, at the end of the lesson, be able to:
 
 Let's go over the basics of HTML and CSS! Most of you should have some experience with this stuff already, since you should've all gone through [Dash](dash.generalassemb.ly) and each built a simple website as part of your admissions process.
 
-### What is the Web?
-* The web is a *service*, provided through an electronic networking backbone known as the *internet*.
+### What Is The Web?
+* The web is a *service*, provided through the electronic telecommunications network known as the *internet*.
 
-  >This works very similarly to how Netflix's DVD plan is provided through the US postal service. The postal service takes care of figuring out how to get parcels from point A to point B - all Netflix has to do is make sure they play by the rules of the system.
+  >This is similar to how Netflix's DVD plan operates via the US postal service. The postal service takes care of figuring out how to get parcels from point A to point B - all Netflix has to do is make sure they play by the rules of the system.
 
-* A service always has two kinds of parties involved: clients, who make requests, and servers, who respond to those requests.
+* A service always has two kinds of parties involved: **clients**, who make requests, and **servers**, who respond to those requests.
 * In the case of the web, the client is the browser - it requests webpages (documents composed of HTML, CSS, and JS) and then "renders" the page for the user to see and interact with.
-* Interestingly, this means that when two people are looking at the same webpage, they are not in the same 'place'; instead they are looking at two completely separate copies of the same document.
-* The HTML, CSS, and JavaScript files that the browser receives provide the blueprint for it to build a fully-rendered page.
+  > Interestingly, this means that when two people are looking at the same webpage, they are not 'in the same place'; instead they are looking at two separate copies of the same document.
+
+* The HTML, CSS, and JS files provide the blueprint for the browser to build a fully-rendered page.
 
 ### HTML
 * HTML, or 'hypertext markup language', is generally used to determine the content and structure of information present on the page.
