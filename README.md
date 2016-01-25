@@ -29,7 +29,7 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
 * The HTML, CSS, and JS files provide the blueprint for the browser to build a fully-rendered page.
 
 ### HTML
-* HTML, or 'hypertext markup language', is generally used to determine the content and structure of information present on the page.
+* HTML defines the structure and content of information on the page.
 * All HTML pages have the same basic structure:
 ```html
   <!DOCTYPE html>
