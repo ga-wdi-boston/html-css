@@ -110,8 +110,17 @@ div {
 ```
 > This looks similar to a JS object literal; however, one important difference is that key-value pairs are separated by _semicolons_ instead of _commas_.
 
-* At a high level, CSS tends to follow two big rules:
-  1. More specific selectors beat less specific ones.
+Since CSS is just a collection of style rules, one key concern is what happens if two rules disagree. CSS has two mechanisms to resolve these disagreements when they come up.
+
+The first is that, if two rules disagree about the value that a property (e.g. 'background-color') should have, a property called **specificity** can be calculated for each selector, and the selector with higher specificity will win out. The short version of how specificity works is that IDs are more 'specific' than classes, which are more 'specific' than tags, which are more 'specific' than traits inherited from parent elements.
+
+  > Specificity is actually a very precise calculation:
+   - +1000pts for each inline style attribute
+   - +100pts for each ID
+   - +10pts for each attribute, class, or pseudo-class
+   - +1pt for each element or pseudo-element tag
+  >
+  > For a more detailed explanation, see this [blog post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) on CSS specificity, or play around with this [CSS specificity calculator](http://specificity.keegan.st/).
 
     > There is actually a strict scoring system which determines just how 'specific' a selector is, based on its contents: inline style attributes get 1000 pts each; IDs get 100 pts each; attributes, classes, and pseudo-classes get 10 pts each; elements and pseudo-elements get 1 pt each. For a more detailed explanation, see [this blog post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) on CSS specificity.
 
