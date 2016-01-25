@@ -124,11 +124,14 @@ The first is that, if two rules disagree about the value that a property (e.g. '
 
 The second mechanism handles an edge case of the first: what happens if two _equally specific_ rules disagree? In that case, CSS rules that come 'later' (lower in the file) beat earlier ones. This kind of behavior is called "cascading", and is where the "C" in CSS comes from.
 
-  2. Late instructions overwrite earlier ones - things "cascade".
-* To add CSS to a page, either include it
-    1. Inline, within an element.
-    2. Between two `<style>` tags, typically in the the `<head>` of the document.
-    3. In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is `<link rel="stylesheet" type="text/css" href="...">`, where 'href' is set to the location of the desired stylesheet. (most common)
+To add CSS to a page, either include it
+1. Inline, within an element.
+2. Between two `<style>` tags, typically in the the `<head>` of the document.
+3. [**Most Common**] In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is
+
+ `<link rel="stylesheet" type="text/css" href="...">`
+
+ where 'href' is set to the location of the desired stylesheet.
 
 #### Lab :: CSS
 In pairs, take the webpage from the previous exercise and add the following styling to it, using whatever CSS you want:
