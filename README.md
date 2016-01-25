@@ -18,6 +18,7 @@ Students should, at the end of the lesson, be able to:
 Let's go over the basics of HTML and CSS! Most of you should have some experience with this stuff already, since you should've all gone through [Dash](dash.generalassemb.ly) and each built a simple website as part of your admissions process.
 
 ### What Is The Web?
+
 * The web is a *service*, provided through the electronic telecommunications network known as the *internet*.
 
   >This is similar to how Netflix's DVD plan operates via the US postal service. The postal service takes care of figuring out how to get parcels from point A to point B - all Netflix has to do is make sure they play by the rules of the system.
@@ -29,6 +30,7 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
 * The HTML, CSS, and JS files provide the blueprint for the browser to build a fully-rendered page.
 
 ### HTML
+
 * HTML defines the structure and content of information on the page.
 * All HTML pages have the same basic structure:
 ```html
@@ -56,6 +58,7 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
 * HTML5 encourages the use of _semantic_ tags - tags whose names reflect their content and role within the page. Examples of this include `<section>`, `<header>`, and `<nav>`.
 
 #### Lab : HTML
+
 In squads, you're going to collaboratively create a new webpage using the raw content found inside `cookie-site/index.html` (using semantic tags where possible).
 
 To start, have one member of each squad fork and clone this repository, and then create two new branches: `gh-pages` and `html`. Then, check out the `html` branch and begin working there.
@@ -89,6 +92,7 @@ This process should add your HTML code to the `gh-pages` branch of your GitHub r
 > As a general rule, the formula for a GitHub Pages URL is `yourUsername.github.io/name-of-your-repository/path-to-location-of-index.html`
 
 ### CSS
+
 In the early days of the web, people used to style their pages using explicit styling tags : `<b>` for bold, `<i>` for italics, etc. But this was very inflexible - you could only control as many attributes as there were tags.
 
 CSS emerged in the mid-90s as a way to make styling webpages easier. Its core idea was replace explicit styling in HTML with _styling rules_ which could be applied to multiple elements; this would have the benefits of (a) reducing duplication, and (b) separating styling instructions from content, making debugging easier.
@@ -134,6 +138,7 @@ To add CSS to a page, either include it
  where 'href' is set to the location of the desired stylesheet.
 
 #### Lab : CSS
+
 Go back to your `master` branch, and then and create (and check out) a new branch called `css`. In your squads, you'll be taking the webpage from the previous exercise and add the following styling to it, using any CSS you like:
 * Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it larger than the rest of the text on the page.
 * The font for the whole page should be 'arial', except for the recipe title (which should be in 'cursive').
@@ -168,6 +173,7 @@ Finally, let's add the new styling to our deployed webpage on GitHub Pages.
 Your website ( `yourUsername.github.io/html-css/cookie-site` ) should now include CSS styling!
 
 #### Bonus (Optional Section)
+
 If you're feeling good about all of this, do some googling and see if you can find a way to style the first letter of every step in the recipe using *only CSS* - no writing new HTML!
 
 ## Additional Resources
