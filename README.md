@@ -122,7 +122,7 @@ The first is that, if two rules disagree about the value that a property (e.g. '
   >
   > For a more detailed explanation, see this [blog post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) on CSS specificity, or play around with this [CSS specificity calculator](http://specificity.keegan.st/).
 
-    > There is actually a strict scoring system which determines just how 'specific' a selector is, based on its contents: inline style attributes get 1000 pts each; IDs get 100 pts each; attributes, classes, and pseudo-classes get 10 pts each; elements and pseudo-elements get 1 pt each. For a more detailed explanation, see [this blog post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) on CSS specificity.
+The second mechanism handles an edge case of the first: what happens if two _equally specific_ rules disagree? In that case, CSS rules that come 'later' (lower in the file) beat earlier ones. This kind of behavior is called "cascading", and is where the "C" in CSS comes from.
 
   2. Late instructions overwrite earlier ones - things "cascade".
 * To add CSS to a page, either include it
