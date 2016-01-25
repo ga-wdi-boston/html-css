@@ -42,8 +42,9 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
     </body>
   </html>
 ```
-* HTML tags generally (but not always) come in matched pairs, with the format `<tag> ... </tag>`. The first tag is called the _opening tag_, while the second is called the _closing tag_.
-* There have historically been two general kinds of HTML elements: 'block' elements, which had built-in line breaks (causing them to automatically stack vertically), and 'inline' elements, which didn't. As of HTML5, those bright-line rules have become more nuanced, but generally, 'block' elements are ones that relate to space on the page, while 'inline' elements tend to refer to text. Here are some examples of each.
+* HTML tags generally come in matched pairs, with the format `<tag> ... </tag>`. The first tag is called the _opening tag_, while the second is called the _closing tag_.
+* There have historically been two general kinds of HTML elements: **block** elements and **inline** elements. Block elements have built-in line breaks, causing them to automatically stack vertically, while inline elements don't.
+> Below are some examples of block and inline elements. Generally, block elements relate to space on the page, while inline elements relate to text; however, there are exceptions to that guideline. For instance, although `<p>` relates to text, it is actually a block element
 
 | Block | Inline |
 |:-----:|:------:|
