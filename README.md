@@ -8,6 +8,7 @@ Students should, at the end of the lesson, be able to:
 
 - Explain the service-like nature of the web, and describe interaction between servers and clients.
 - Write out the basic skeleton of an HTML page.
+- Deploy a basic web page to GitHub Pages.
 - Add CSS to an HTML file both by using inline styling, `<style>` tags, and by linking to an external stylesheet with `<link>`.
 - Explain at a high level how CSS styling works.
 - Write CSS and use it to add styling to a basic page.
