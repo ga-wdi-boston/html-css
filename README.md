@@ -53,8 +53,7 @@ Let's go over the basics of HTML and CSS! Most of you should have some experienc
 |`<header>`|`<strong>`|
 |`<p>`|`<a>`|
 
-
-* HTML5 encourages using "semantic" tags - tags whose names reflect their content and role within the page. Examples of this include `<section>`, `<header>`, and `<nav>`.
+* HTML5 encourages the use of _semantic_ tags - tags whose names reflect their content and role within the page. Examples of this include `<section>`, `<header>`, and `<nav>`.
 
 #### Lab :: HTML
 In pairs, create a new webpage using the raw content found inside `exercise-app/index.html`. Try to use semantic tags where possible.
