@@ -93,7 +93,23 @@ In the early days of the web, people used to style their pages using explicit st
 
 CSS emerged in the mid-90s as a way to make styling webpages easier. Its core idea was replace explicit styling in HTML with _styling rules_ which could be applied to multiple elements; this would have the benefits of (a) reducing duplication, and (b) separating styling instructions from content, making debugging easier.
 
-* The general syntax of CSS is "selector : { some_set_of_style_rules }".
+CSS works by selecting some group of elements (using a special reference called a **selector**) and defining a set of properties and values to apply to that group of elements. The general syntax for this is:
+```
+selector {
+  property: value;
+  property: value;
+}
+```
+A specific example is
+```
+div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+```
+> This looks similar to a JS object literal; however, one important difference is that key-value pairs are separated by _semicolons_ instead of _commas_.
+
 * At a high level, CSS tends to follow two big rules:
   1. More specific selectors beat less specific ones.
 
