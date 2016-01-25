@@ -1,0 +1,48 @@
+* {
+  text-align: center;
+  font-family: arial;
+  background-color: grey;
+}
+
+h1 {
+  color: rgb(149, 69, 53);
+  font: 80px cursive;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+.butter {
+ color: yellow;
+}
+.brown-sugar {
+ color: brown;
+}
+.sugar {
+ color: white;
+}
+.pudding-powder {
+ color: powderblue;
+}
+.milk {
+ color: mintcream;
+}
+.vanilla-extract {
+ color: floralwhite;
+}
+.eggs {
+ color: antiquewhite;
+}
+.flour {
+ color: wheat;
+}
+.baking-soda {
+ color: lemonchiffon;
+}
+.salt {
+ color: seashell;
+}
+.choc-chips {
+ color: chocolate;
+}
