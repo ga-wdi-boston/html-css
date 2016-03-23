@@ -82,6 +82,7 @@ The first is that, if two rules disagree about the value that a property (e.g. '
 The second mechanism handles an edge case of the first: what happens if two _equally specific_ rules disagree? In that case, CSS rules that come 'later' (lower in the file) beat earlier ones. This kind of behavior is called "cascading", and is where the "C" in CSS comes from.
 
 To add CSS to a page, either include it
+
 1. Inline, within an element.
 2. Between two `<style>` tags, typically in the the `<head>` of the document.
 3. [**Most Common**] In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is
