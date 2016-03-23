@@ -91,7 +91,7 @@ To add CSS to a page, either include it
  where 'href' is set to the location of the desired stylesheet.
 
 
- #### Lab
+ ### Lab
 
  In squads, you're going to collaboratively create a new webpage using the raw content found inside `cookie-site/index.html` (using semantic tags where possible).
 
@@ -109,6 +109,7 @@ To add CSS to a page, either include it
    > Push your updated `master` branch up to GitHub
 
  At this point, the `master` branch on your GitHub fork should include your new HTML page.
+
 
 
  Now checkout the `css` branch that you created earlier
@@ -161,4 +162,3 @@ Here are some sites you might want to bookmark, if you haven't already.
 - https://developer.mozilla.org/en-US/docs/Web/HTML
 - https://developer.mozilla.org/en-US/docs/Web/CSS
 - https://css-tricks.com/
-- http://www.w3schools.com/cssref/
