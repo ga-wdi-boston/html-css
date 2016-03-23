@@ -90,8 +90,6 @@ To add CSS to a page, either include it
 
  where 'href' is set to the location of the desired stylesheet.
 
-
-
  ### Lab
 
  In squads, you're going to collaboratively create a new webpage using the raw content found inside `cookie-site/index.html` (using semantic tags where possible).
