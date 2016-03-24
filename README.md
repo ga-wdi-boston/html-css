@@ -84,14 +84,17 @@ The second mechanism handles an edge case of the first: what happens if two _equ
 To add CSS to a page, either include it
 
 1. Inline, within an element.
+
 2. Between two `<style>` tags, typically in the the `<head>` of the document.
+
 3. [**Most Common**] In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is
 
  `<link rel="stylesheet" type="text/css" href="...">`
 
  where 'href' is set to the location of the desired stylesheet.
 
- ### Lab
+
+ #### Lab
 
  In squads, you're going to collaboratively create a new webpage using the raw content found inside `cookie-site/index.html` (using semantic tags where possible).
 
@@ -108,9 +111,8 @@ To add CSS to a page, either include it
  3. `git push origin master`
    > Push your updated `master` branch up to GitHub
 
+
  At this point, the `master` branch on your GitHub fork should include your new HTML page.
-
-
 
  Now checkout the `css` branch that you created earlier
 
