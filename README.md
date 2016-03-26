@@ -87,23 +87,19 @@ To add CSS to a page, either include it
 
 2. Between two `<style>` tags, typically in the the `<head>` of the document.
 
-3. [**Most Common**] In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is
-
- `<link rel="stylesheet" type="text/css" href="...">`
-
- where 'href' is set to the location of the desired stylesheet.
+3. [**Most Common**] In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is `<link rel="stylesheet" type="text/css" href="...">` where 'href' is set to the location of the desired stylesheet.
 
 
- ### Lab
+### Lab: Create a cookie site
 
- In squads, you're going to collaboratively create a new webpage using the raw content found inside `cookie-site/index.html` (using semantic tags where possible).
+In squads, you're going to collaboratively create a new webpage using the raw content found inside `index.html` (using semantic tags where possible).
 
- To start, have one member of each squad fork and clone this repository, and then create three new branches: `gh-pages`, `css`, and `html`. Then, check out the `html` branch and begin working there.
+To start, have one member of each squad fork and clone this repository, run `npm install`, and then create three new branches: `gh-pages`, `css`, and `html`. Then, check out the `html` branch and begin working there. A useful atom package that makes writing html a tad less tedious is [less-than-slash](https://atom.io/packages/less-than-slash) which completes a closing tag automatically when you write `</`
 
- Once you finish writing your HTML, add the changes you've made to `index.html` and make a commit. Then, run the following commands:
+Once you finish writing your HTML, add the changes you've made to `index.html` and make a commit. Then, run the following commands:
 
  1. `git checkout master`
-   > Move to the master branch
+  > Move to the master branch
 
  2. `git merge html`
    > Add the changes on the `html` branch to the `master` branch. Depending on what you've done, you may get a warning about a 'merge conflict' - if that happens, flag down one of the consultants.
@@ -112,16 +108,15 @@ To add CSS to a page, either include it
    > Push your updated `master` branch up to GitHub
 
 
- At this point, the `master` branch on your GitHub fork should include your new HTML page.
+At this point, the `master` branch on your GitHub fork should include your new HTML page.
 
- Now checkout the `css` branch that you created earlier
-
- Add a reference to `style.css` in the `styles` directory using a `<link>` tag in your HTML page and style your site as follows
+Now checkout the `css` branch that you created earlier and style your site using the `main.css` file in the `assets/styles/` directory as follows. Don't worry about creating a link tag as the two script tags in the head of `index.html` take care of that for you.
 
  * Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it larger than the rest of the text on the page.
  * The font for the whole page should be 'arial', except for the recipe title (which should be in 'cursive').
  * All text in the page should be centered.
  * In the ingredients list, give each ingredient a unique color; any time that ingredient appears in the recipe, make it that same color.
+ * And feel free to experiment and add whatever else you want!
 
 
 Once you are finished styling your site, commit your changes and merge it with master like you did with your html branch
@@ -136,7 +131,7 @@ Once you are finished styling your site, commit your changes and merge it with m
 
 
 
- The last thing we're going to do is **deploy** (i.e. host) this web page through a service that GitHub provides called GitHub pages. To do this, go through the following steps.
+The last thing we're going to do is **deploy** (i.e. host) this web page through a service that GitHub provides called GitHub pages. To do this, go through the following steps.
 
 
  1. `git checkout gh-pages`
@@ -145,10 +140,17 @@ Once you are finished styling your site, commit your changes and merge it with m
  2. `git merge master`
    > Add the new changes that have been made on `master` to the `gh-pages` branch on your local repo.
 
- 3. `git push origin gh-pages`
-   > Push your updated `gh-pages` branch up to GitHub
+ 3. In your `.gitignore` file, comment out the lines `*bundle.js` and `vendor.js` so git no longer ignores those files e.g., `# *bundle.js`. Alternatively you can remove those lines altogether.
+   > This tells Git to no longer ignore those files so Git can track them.
 
- This process should add your HTML and CSS code to the `gh-pages` branch of your GitHub repo. Now, GitHub can work its magic and make that page visible on the web. If you go to the URL `yourUsername.github.io/html-css/cookie-site` in your browser, you should be able to see your page!
+ 4. Next run `grunt build`.
+   > This bundles your code and creates the bundle.js and vendor.bundle.js files that you just un-ignored.
+
+ 5. Now add and commit your code and run `git push origin gh-pages`
+ > This will push your code to github pages!
+
+
+This process should add your HTML and CSS code to the `gh-pages` branch of your GitHub repo. Now, GitHub can work its magic and make that page visible on the web. If you go to the URL `yourUsername.github.io/html-css/` in your browser, you should be able to see your page!
 
  > As a general rule, the formula for a GitHub Pages URL is `yourUsername.github.io/name-of-your-repository/path-to-location-of-index.html`
 
