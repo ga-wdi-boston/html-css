@@ -84,13 +84,9 @@ The second mechanism handles an edge case of the first: what happens if two _equ
 To add CSS to a page, either include it
 
 1. Inline, within an element.
-
 2. Between two `<style>` tags, typically in the the `<head>` of the document.
-
 3. [**Most Common**] In a separate file referred to by a `<link>` tag, also typically in the the `<head>`. The syntax for using a `<link>` tag is
-
  `<link rel="stylesheet" type="text/css" href="...">`
-
  where 'href' is set to the location of the desired stylesheet.
 
 
@@ -103,7 +99,7 @@ To add CSS to a page, either include it
  Once you finish writing your HTML, add the changes you've made to `index.html` and make a commit. Then, run the following commands:
 
  1. `git checkout master`
-   > Move to the master branch
+  > Move to the master branch
 
  2. `git merge html`
    > Add the changes on the `html` branch to the `master` branch. Depending on what you've done, you may get a warning about a 'merge conflict' - if that happens, flag down one of the consultants.
