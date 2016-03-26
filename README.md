@@ -94,7 +94,7 @@ To add CSS to a page, either include it
 
 In squads, you're going to collaboratively create a new webpage using the raw content found inside `index.html` (using semantic tags where possible).
 
-To start, have one member of each squad fork and clone this repository, and then create three new branches: `gh-pages`, `css`, and `html`. Then, check out the `html` branch and begin working there.
+To start, have one member of each squad fork and clone this repository, run `npm install`, and then create three new branches: `gh-pages`, `css`, and `html`. Then, check out the `html` branch and begin working there. A useful atom package that makes writing html a tad less tedious is [less-than-slash](https://atom.io/packages/less-than-slash) which completes a closing tag automatically when you write `</`
 
 Once you finish writing your HTML, add the changes you've made to `index.html` and make a commit. Then, run the following commands:
 
@@ -110,12 +110,13 @@ Once you finish writing your HTML, add the changes you've made to `index.html` a
 
 At this point, the `master` branch on your GitHub fork should include your new HTML page.
 
-Now checkout the `css` branch that you created earlier and style your site using the `main.css` file in the `assets/styles/` directory as follows. Don't worry about creating a link tag as the two script tags near the top of `index.html` take care of that for you.
+Now checkout the `css` branch that you created earlier and style your site using the `main.css` file in the `assets/styles/` directory as follows. Don't worry about creating a link tag as the two script tags in the head of `index.html` take care of that for you.
 
  * Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it larger than the rest of the text on the page.
  * The font for the whole page should be 'arial', except for the recipe title (which should be in 'cursive').
  * All text in the page should be centered.
  * In the ingredients list, give each ingredient a unique color; any time that ingredient appears in the recipe, make it that same color.
+ * And feel free to experiment and add whatever else you want!
 
 
 Once you are finished styling your site, commit your changes and merge it with master like you did with your html branch
@@ -139,7 +140,7 @@ The last thing we're going to do is **deploy** (i.e. host) this web page through
  2. `git merge master`
    > Add the new changes that have been made on `master` to the `gh-pages` branch on your local repo.
 
- 3. In your `.gitignore` file add comment out the lines `*bundle.js` and `vendor.js` so git no longer ignores those files e.g., `# *bundle.js`. Alternatively you can remove those lines altogether.
+ 3. In your `.gitignore` file, comment out the lines `*bundle.js` and `vendor.js` so git no longer ignores those files e.g., `# *bundle.js`. Alternatively you can remove those lines altogether.
    > This tells Git to no longer ignore those files so Git can track them.
 
  4. Next run `grunt build`.
