@@ -108,9 +108,9 @@ Once you finish writing your HTML, add the changes you've made to `index.html` a
    > Push your updated `master` branch up to GitHub
 
 
- At this point, the `master` branch on your GitHub fork should include your new HTML page.
+At this point, the `master` branch on your GitHub fork should include your new HTML page.
 
- Now checkout the `css` branch that you created earlier and style your site using the `main.css` file in the `assets/styles/` directory as follows. Don't worry about creating a link tag as the two script tags near the top of `index.html` take care of that for you.
+Now checkout the `css` branch that you created earlier and style your site using the `main.css` file in the `assets/styles/` directory as follows. Don't worry about creating a link tag as the two script tags near the top of `index.html` take care of that for you.
 
  * Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it larger than the rest of the text on the page.
  * The font for the whole page should be 'arial', except for the recipe title (which should be in 'cursive').
@@ -130,7 +130,7 @@ Once you are finished styling your site, commit your changes and merge it with m
 
 
 
- The last thing we're going to do is **deploy** (i.e. host) this web page through a service that GitHub provides called GitHub pages. To do this, go through the following steps.
+The last thing we're going to do is **deploy** (i.e. host) this web page through a service that GitHub provides called GitHub pages. To do this, go through the following steps.
 
 
  1. `git checkout gh-pages`
@@ -145,11 +145,11 @@ Once you are finished styling your site, commit your changes and merge it with m
  4. Next run `grunt build`.
    > This bundles your code and creates the bundle.js and vendor.bundle.js files that you just un-ignored.
 
-5. Now add and commit your code and run `git push origin gh-pages`
+ 5. Now add and commit your code and run `git push origin gh-pages`
  > This will push your code to github pages!
 
 
- This process should add your HTML and CSS code to the `gh-pages` branch of your GitHub repo. Now, GitHub can work its magic and make that page visible on the web. If you go to the URL `yourUsername.github.io/html-css/` in your browser, you should be able to see your page!
+This process should add your HTML and CSS code to the `gh-pages` branch of your GitHub repo. Now, GitHub can work its magic and make that page visible on the web. If you go to the URL `yourUsername.github.io/html-css/` in your browser, you should be able to see your page!
 
  > As a general rule, the formula for a GitHub Pages URL is `yourUsername.github.io/name-of-your-repository/path-to-location-of-index.html`
 
