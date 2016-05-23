@@ -128,7 +128,7 @@ To add CSS to a page, either include it
 
 1.  Between two `<style>` tags, typically in the the `<head>` of the document.
 
-1.  [**Most Common**] In a separate file referred to by a `<link>` tag, also
+1.  **Most Common** In a separate file referred to by a `<link>` tag, also
 typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
 rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
 location of the desired stylesheet.
@@ -156,7 +156,9 @@ In squads, you're going to collaboratively create a new webpage using the raw
 content found inside `index.html` (using semantic tags where possible).
 
 To start, have one member of each squad fork and clone this repository, run `npm
-install`, and then create three new branches: `gh-pages`, `css`, and `html`.
+install`, and then create three new branches: `gh-pages`, `css`, and `html`;
+**CREATE THESE BRANCHES FROM THE MASTER BRANCH**.
+
 Then, check out the `html` branch and begin working there.
 
 Once you finish writing your HTML, add the changes you've made to `index.html`
@@ -205,7 +207,6 @@ master like you did with your html branch
 The last thing we're going to do is **deploy** (i.e. host) this web page through
 a service that GitHub provides called GitHub pages. To do this, go through the
 following steps.
-
 
 1.  `git checkout gh-pages`
  > Move to the `gh-pages` branch that you created earlier.
