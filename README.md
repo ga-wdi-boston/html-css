@@ -157,10 +157,7 @@ content found inside `index.html` (using semantic tags where possible).
 
 To start, have one member of each squad fork and clone this repository, run `npm
 install`, and then create three new branches: `gh-pages`, `css`, and `html`.
-Then, check out the `html` branch and begin working there. A useful atom package
-that makes writing html a tad less tedious is
-[less-than-slash](https://atom.io/packages/less-than-slash) which completes a
-closing tag automatically when you write `</`
+Then, check out the `html` branch and begin working there.
 
 Once you finish writing your HTML, add the changes you've made to `index.html`
 and make a commit. Then, run the following commands:
