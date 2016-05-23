@@ -169,6 +169,12 @@ code.
 
 Then, check out the `html` branch and begin working there.
 
+1.  `grunt serve`
+
+ > `grunt serve` spins up a local server via Grunt. This local server allows us to
+work in a 'Development' environment to replicate what the 'Deployed' environment
+will  be like.
+
 Once you finish writing your HTML, add the changes you've made to `index.html`
 and make a commit. Then, run the following commands:
 
