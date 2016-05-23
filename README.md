@@ -2,6 +2,12 @@
 
 # HTML & CSS Overview
 
+## Instructions
+
+-   [Fork and Clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) this
+repository
+-   Run `npm install` to install dependencies
+
 ## Objectives
 
 Students should, at the end of the lesson, be able to:
@@ -155,9 +161,11 @@ developing this masterpiece!
 In squads, you're going to collaboratively create a new webpage using the raw
 content found inside `index.html` (using semantic tags where possible).
 
-To start, have one member of each squad fork and clone this repository, run `npm
-install`, and then create three new branches: `gh-pages`, `css`, and `html`;
-**CREATE THESE BRANCHES FROM THE MASTER BRANCH**.
+To start, indentify one member of your squad to be the 'project lead'. This
+person will create three new branches: `gh-pages`, `css`, and `html`; **CREATE
+THESE BRANCHES FROM THE MASTER BRANCH**. The 'project lead' will be the only
+squad member to code during the lab, everyone else will advise them what to
+code.
 
 Then, check out the `html` branch and begin working there.
 
