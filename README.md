@@ -13,12 +13,6 @@ linking to an external stylesheet with `<link>`.
 -   Write CSS and use it to add styling to a basic page.
 -   Deploy a basic web page to GitHub Pages.
 
-## Instructions
-
--   [Fork and Clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) this
-repository.
--   Run `npm install` to install dependencies.
-
 ## Overview
 
 Let's go over the basics of HTML and CSS! Most of you should have some
