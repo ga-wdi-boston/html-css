@@ -4,7 +4,8 @@
 
 ## Instructions
 
--   [Fork and Clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone) this
+-   [Fork and Clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+this
 repository
 -   Run `npm install` to install dependencies
 
@@ -28,8 +29,9 @@ admissions process.
 
 ### HTML
 
--   HTML defines the structure and content of information on the page.
--   All HTML pages have the same basic structure:
+HTML defines the structure and content of information on the page.
+
+All HTML pages have the same basic structure:
 
 ```html
   <!DOCTYPE html>
@@ -43,13 +45,15 @@ admissions process.
   </html>
 ```
 
--   HTML tags generally come in matched pairs, with the format `<tag> ... </tag>`.
+HTML tags generally come in matched pairs, with the format `<tag> ... </tag>`.
 The first tag is called the _opening tag_, while the second is called the
 _closing tag_.
--   There have historically been two general kinds of HTML elements: **block**
+
+There have historically been two general kinds of HTML elements: **block**
 elements and **inline** elements. Block elements have built-in line breaks,
 causing them to automatically stack vertically, while inline elements don't.
--   Below are some examples of block and inline elements. Generally, block elements
+
+Below are some examples of block and inline elements. Generally, block elements
 relate to space on the page, while inline elements relate to text; however,
 there are exceptions to that guideline. For instance, although `<p>` relates to
 text, it is actually a block element
@@ -61,9 +65,35 @@ text, it is actually a block element
 |  `<header>` |  `<strong>`  |
 |    `<p>`    |     `<a>`    |
 
--   HTML5 encourages the use of _semantic_ tags - tags whose names reflect their
+HTML5 encourages the use of _semantic_ tags - tags whose names reflect their
 content and role within the page. Examples of this include `<section>`,
 `<header>`, and `<nav>`.
+
+#### HTML Attributes
+
+All HTML elements are able to support attributes. Attributes vary depending on
+ their use, but always live within the opening tag of an HTML element.
+
+For example:
+
+```html
+<a href="http://google.com">Google</a>
+```
+
+Here, `href=""` is an attribtue.
+
+Attributes will always follow the `attribute-name="value"` convention.
+
+Below are a list of extremely helpful attributes that allow you to add
+custom meta-information to your HTML elements. They become immensely helpful
+when targeting these elements with CSS and/or JavaScript (we'll see this more
+in jQuery).
+
+|  Attribute  |     Usage    |
+|:-----------:|:------------:|
+|     [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id)    | Value can only be used once, elements can only have max of one ID. Creates a unique identifier for an element. |
+| [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) | Value can be used multiple times, elements can have many classes. |
+|  [`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-%2A) | Very helpful when used with jQuery. Allows data to be bound to HTML element using custom `data-<custom>="<custom value>"` convention. |
 
 ### CSS
 
@@ -171,9 +201,9 @@ Then, check out the `html` branch and begin working there.
 
 1.  `grunt serve`
 
- > `grunt serve` spins up a local server via Grunt. This local server allows us to
-work in a 'Development' environment to replicate what the 'Deployed' environment
-will  be like.
+  > `grunt serve` spins up a local server via Grunt. This local server allows
+  > us to work in a 'Development' environment to replicate what the 'Deployed'
+  > environment will  be like.
 
 Once you finish writing your HTML, add the changes you've made to `index.html`
 and make a commit. Then, run the following commands:
@@ -184,12 +214,13 @@ and make a commit. Then, run the following commands:
 
 1.  `git merge html`
 
-  > Add the changes on the `html` branch to the `master` branch. Depending on what
-you've done, you may get a warning about a 'merge conflict' - if that happens,
-flag down one of the consultants.
+  > Add the changes on the `html` branch to the `master` branch. Depending on
+  > what you've done, you may get a warning about a 'merge conflict' - if that
+  > happens, flag down one of the consultants.
 
 1.  `git push origin master`
- > Push your updated `master` branch up to GitHub
+
+  > Push your updated `master` branch up to GitHub
 
 At this point, the `master` branch on your GitHub fork should include your new
 HTML page.
@@ -199,7 +230,8 @@ the `main.css` file in the `assets/styles/` directory as follows. Don't worry
 about creating a link tag as the two script tags in the head of `index.html`
 take care of that for you.
 
--   Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade of
+-   Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade
+of
 brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it
 larger than the rest of the text on the page.
 -   The font for the whole page should be 'arial', except for the recipe title
@@ -223,37 +255,42 @@ a service that GitHub provides called GitHub pages. To do this, go through the
 following steps.
 
 1.  `git checkout gh-pages`
- > Move to the `gh-pages` branch that you created earlier.
+
+  > Move to the `gh-pages` branch that you created earlier.
 
 1.  `git merge master`
- > Add the new changes that have been made on `master` to the `gh-pages` branch
- on your local repo.
 
-1.  In your `.gitignore` file, comment out the lines `*bundle.js` and `vendor.js` so
-git no longer ignores those files e.g., `# *bundle.js`. Alternatively you can
-remove those lines altogether.
- > This tells Git to no longer ignore those files so Git can track them.
+  > Add the new changes that have been made on `master` to the `gh-pages`
+  > branch on your local repo.
+
+1.  In your `.gitignore` file, comment out the lines `*bundle.js` and
+`vendor.js` so git no longer ignores those files e.g., `# *bundle.js`.
+Alternatively you can remove those lines altogether.
+
+  > This tells Git to no longer ignore those files so Git can track them.
 
 1.  Next run `grunt build`.
- > This bundles your code and creates the bundle.js and vendor.bundle.js files
- that you just un-ignored.
+
+  > This bundles your code and creates the bundle.js and vendor.bundle.js files
+  > that you just un-ignored.
 
 1.  Now add and commit your code and run `git push origin gh-pages`
- > This will push your code to github pages!
+
+  > This will push your code to github pages!
 
 This process should add your HTML and CSS code to the `gh-pages` branch of your
 GitHub repo. Now, GitHub can work its magic and make that page visible on the
 web. If you go to the URL `yourUsername.github.io/html-css/` in your browser,
 you should be able to see your page!
 
- > As a general rule, the formula for a GitHub Pages URL is
- `yourUsername.github.io/name-of-your-repository/path-to-location-of-index.html`
+  > As a general rule, the formula for a GitHub Pages URL is
+  > `your-username.github.io/repository-name/path-to-location-of-index.html`
 
 #### Bonus (Optional Section)
 
 If you're feeling good about all of this, do some googling and see if you can
-find a way to style the first letter of every step in the recipe using *only
-CSS* - no writing new HTML!
+find a way to style the first letter of every step in the recipe using _only
+CSS_ - no writing new HTML!
 
 ## Additional Resources
 
