@@ -2,13 +2,6 @@
 
 # HTML & CSS Overview
 
-## Instructions
-
--   [Fork and Clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-this
-repository
--   Run `npm install` to install dependencies
-
 ## Objectives
 
 Students should, at the end of the lesson, be able to:
@@ -19,6 +12,13 @@ linking to an external stylesheet with `<link>`.
 -   Explain at a high level how CSS styling works.
 -   Write CSS and use it to add styling to a basic page.
 -   Deploy a basic web page to GitHub Pages.
+
+## Preparation
+
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Create a new branch, `training`, for your work.
+1.  Install dependencies with `npm install`.
 
 ## Overview
 
