@@ -169,18 +169,17 @@ typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
 rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
 location of the desired stylesheet.
 
-### Code-Along: Barry's Butcher Shop
+### Code-Along: Valerie's Veggie Shop
 
-Together we are going to look at our good friend Barry's purposal for his
-website. Barry has been so gracious to provide us with what he wants to be
-included on his website. Since Barry has spent his entire life practicing the
-ancient art of 'cutting up meat', he is not a technology oriented guy. Let's
-help out of good friend Barry!
+Together we are going to look at our good friend Valerie's proposal for her
+website. Valerie has been so gracious to provide us with what he wants to be
+included on her website. Since Valerie has spent her entire life practicing the
+ancient art of 'chopping up veggies', she is not a technology oriented gal. Let's help out our good friend Valerie!
 
-First, we are going to great a branch to create Barry's website.
+First, we are going to great a branch to create Valerie's website.
 
 ```bash
-git checkout -b barrys-website
+git checkout -b vals-website
 ```
 
 Once we have the branch created, open the `/practice` directory so we can start
