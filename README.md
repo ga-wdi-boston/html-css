@@ -249,41 +249,11 @@ master like you did with your html branch
 
 1.  `git push origin master`
 
+#### GitHub Pages Deployment
+
 The last thing we're going to do is **deploy** (i.e. host) this web page through
-a service that GitHub provides called GitHub pages. To do this, go through the
-following steps.
-
-1.  `git checkout gh-pages`
-
-  > Move to the `gh-pages` branch that you created earlier.
-
-1.  `git merge master`
-
-  > Add the new changes that have been made on `master` to the `gh-pages`
-  > branch on your local repo.
-
-1.  In your `.gitignore` file, comment out the lines `*bundle.js` and
-`vendor.js` so git no longer ignores those files e.g., `# *bundle.js`.
-Alternatively you can remove those lines altogether.
-
-  > This tells Git to no longer ignore those files so Git can track them.
-
-1.  Next run `grunt build`.
-
-  > This bundles your code and creates the bundle.js and vendor.bundle.js files
-  > that you just un-ignored.
-
-1.  Now add and commit your code and run `git push origin gh-pages`
-
-  > This will push your code to github pages!
-
-This process should add your HTML and CSS code to the `gh-pages` branch of your
-GitHub repo. Now, GitHub can work its magic and make that page visible on the
-web. If you go to the URL `yourUsername.github.io/html-css/` in your browser,
-you should be able to see your page!
-
-  > As a general rule, the formula for a GitHub Pages URL is
-  > `your-username.github.io/repository-name/path-to-location-of-index.html`
+a service that GitHub provides called GitHub pages. To do this, follow the
+ instructions given in the [GitHub Pages Deployment Guide](https://github.com/ga-wdi-boston/gh-pages-deployment-guide).
 
 #### Bonus (Optional Section)
 
