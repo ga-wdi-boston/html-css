@@ -229,6 +229,17 @@ the `main.css` file in the `assets/styles/` directory as follows. Don't worry
 about creating a link tag as the two script tags in the head of `index.html`
 take care of that for you.
 
+Take a look at your `index.html`, do you notice anything that seems off?
+
+When we made the `css` branch from `master`, we did not have the html yet. In
+order to get our udpated `master` branch to our `css` branch, we need to do a
+rebase. We will learn more about what a rebase does in unit 3, so don't worry
+about _understanding_ it right now, but to get our `css` branch up to date with
+master run (double check to confirm that you've checked out the `css` branch)
+`git rebase master`. **IF** you have issues, flag down a consultant
+
+Now, in your `main.css` file:
+
 -   Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade
 of
 brown](http://en.wikipedia.org/wiki/Shades_of_brown#Chestnut), and make it
