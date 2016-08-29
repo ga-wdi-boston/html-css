@@ -174,7 +174,8 @@ location of the desired stylesheet.
 Together we are going to look at our good friend Valerie's proposal for her
 website. Valerie has been so gracious to provide us with what he wants to be
 included on her website. Since Valerie has spent her entire life practicing the
-ancient art of 'chopping up veggies', she is not a technology oriented gal. Let's help out our good friend Valerie!
+ancient art of 'chopping up veggies', she is not a technology oriented gal.
+Let's help out our good friend Valerie!
 
 First, we are going to great a branch to create Valerie's website.
 
@@ -228,6 +229,20 @@ Now checkout the `css` branch that you created earlier and style your site using
 the `main.css` file in the `assets/styles/` directory as follows. Don't worry
 about creating a link tag as the two script tags in the head of `index.html`
 take care of that for you.
+
+Take a look at your `index.html`, do you notice anything that seems off?
+
+When we made the `css` branch from `master`, we did not have the html yet. In
+order to get our udpated `master` branch to our `css` branch, we need to do a
+rebase. We will learn more about what a rebase does in unit 3, so don't worry
+about _understanding_ it right now. To get our `css` branch up to date with
+`master`:
+
+-   Confirm you've checked out the `css` branch with `git status`.
+-   Update the `css` branch with `git rebase master`.
+-   If you experience any issues, flag down a consultant.
+
+Now, in your `main.css` file:
 
 -   Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade
 of
