@@ -235,9 +235,12 @@ Take a look at your `index.html`, do you notice anything that seems off?
 When we made the `css` branch from `master`, we did not have the html yet. In
 order to get our udpated `master` branch to our `css` branch, we need to do a
 rebase. We will learn more about what a rebase does in unit 3, so don't worry
-about _understanding_ it right now, but to get our `css` branch up to date with
-master run (double check to confirm that you've checked out the `css` branch)
-`git rebase master`. **IF** you have issues, flag down a consultant
+about _understanding_ it right now. To get our `css` branch up to date with
+`master`:
+
+-   Confirm you've checked out the `css` branch with `git status`.
+-   Update the `css` branch with `git rebase master`.
+-   If you experience any issues, flag down a consultant.
 
 Now, in your `main.css` file:
 
