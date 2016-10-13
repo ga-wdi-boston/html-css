@@ -210,6 +210,17 @@ Input elements should also be wrapped in a label element:
 Wrapping the input in a label allows us to avoid using the `for` attribute on
 the label and an `id` on the input.
 
+### Best Practices: UI / Accessibility
+Many website users have various disabilities and are neurodiverse. There are many
+easy decisions you can make about your HTML and CSS that will help people use your
+website, and these tips will also create a website that is easy to use for everyone.
+
+- Use HTML5 elements - not just divs!
+- Use high contrast between backgrounds and text
+- Caption your images in a relevant way
+- Don't use color or sound alone to show what an element does
+- Organize content with headings and subheadings
+
 ### Lab: Create a cookie site
 
 In squads, you're going to collaboratively create a new webpage using the raw
