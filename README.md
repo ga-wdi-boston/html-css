@@ -169,6 +169,16 @@ typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
 rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
 location of the desired stylesheet.
 
+#### CSS Best Practices: Selectors
+
+1. In general, we want to _avoid inline styles_ - it's best to keep all your styles
+in one place, on a stylesheet.
+
+1. USE IDs SPARINGLY. IDs should be reserved for emergency situations only,
+when there is no other way to select an element. There are a lot of selectors to
+use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
+
+
 ### Code-Along: Valerie's Veggie Shop
 
 Together we are going to look at our good friend Valerie's proposal for her
@@ -185,6 +195,41 @@ git checkout -b vals-website
 
 Once we have the branch created, open the `/practice` directory so we can start
 developing this masterpiece!
+
+#### HTML Best Practices: Inputs
+Often websites like Valerie's need to get input from the user - names, addresses,
+and other information. When using the `<input>` element, it should ALWAYS be
+wrapped in a `<form>`. This is helpful both for accessibility (screen readers)
+and for accessing that data using JavaScript.
+Input elements should also be wrapped in a label element:
+
+```html
+<label>Last Name <input type="text" name="lastName" /></label>
+```
+
+Wrapping the input in a label allows us to avoid using the `for` attribute on
+the label and an `id` on the input.
+
+### Best Practices: UI / Accessibility
+Many website users have various disabilities and are neurodiverse. There are many
+easy decisions you can make about your HTML and CSS that will help people use your
+website, and these tips will also create a website that is easy to use for everyone.
+
+- Use HTML5 elements - not just divs!
+- Use high contrast between backgrounds and text
+- Caption your images in a relevant way
+- Don't use color or sound alone to show what an element does
+- Organize content with headings and subheadings
+
+### Debugging CSS
+The best way to debug anything is to _be methodical_. This includes CSS! If your
+elements are not behaving as you expect, here are the first steps. More information
+about debugging CSS is in the additional resources.
+
+1. Make sure your class names are exactly the same in HTML and CSS.
+2. Double check that your selectors are selecting the correct element.
+3. Do not ADD MORE to things that aren't working. Take out the code that doesn't work before adding something else.
+
 
 ### Lab: Create a cookie site
 
@@ -280,6 +325,8 @@ CSS_ - no writing new HTML!
 
 Here are some sites you might want to bookmark, if you haven't already.
 
+-   [HTML5 Element Flowchart](http://html5doctor.com/lets-talk-about-semantics/)
 -   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 -   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 -   [CSS-Tricks](https://css-tricks.com)
+-   [Using the browser to debug CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
