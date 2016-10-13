@@ -196,6 +196,20 @@ git checkout -b vals-website
 Once we have the branch created, open the `/practice` directory so we can start
 developing this masterpiece!
 
+#### HTML Best Practices: Inputs
+Often websites like Valerie's need to get input from the user - names, addresses,
+and other information. When using the `<input>` element, it should ALWAYS be
+wrapped in a `<form>`. This is helpful both for accessibility (screen readers)
+and for accessing that data using JavaScript.
+Input elements should also be wrapped in a label element:
+
+```html
+<label>Last Name <input type="text" name="lastName" /></label>
+```
+
+Wrapping the input in a label allows us to avoid using the `for` attribute on
+the label and an `id` on the input.
+
 ### Lab: Create a cookie site
 
 In squads, you're going to collaboratively create a new webpage using the raw
