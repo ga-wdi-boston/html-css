@@ -280,6 +280,7 @@ CSS_ - no writing new HTML!
 
 Here are some sites you might want to bookmark, if you haven't already.
 
+-   [HTML5 Element Flowchart](http://html5doctor.com/lets-talk-about-semantics/)
 -   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 -   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 -   [CSS-Tricks](https://css-tricks.com)
