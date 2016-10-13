@@ -221,6 +221,16 @@ website, and these tips will also create a website that is easy to use for every
 - Don't use color or sound alone to show what an element does
 - Organize content with headings and subheadings
 
+### Debugging CSS
+The best way to debug anything is to _be methodical_. This includes CSS! If your
+elements are not behaving as you expect, here are the first steps. More information
+about debugging CSS is in the additional resources.
+
+1. Make sure your class names are exactly the same in HTML and CSS.
+2. Double check that your selectors are selecting the correct element.
+3. Do not ADD MORE to things that aren't working. Take out the code that doesn't work before adding something else.
+
+
 ### Lab: Create a cookie site
 
 In squads, you're going to collaboratively create a new webpage using the raw
@@ -319,3 +329,4 @@ Here are some sites you might want to bookmark, if you haven't already.
 -   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 -   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 -   [CSS-Tricks](https://css-tricks.com)
+-   [Using the browser to debug CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
