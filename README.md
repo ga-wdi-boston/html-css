@@ -169,6 +169,16 @@ typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
 rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
 location of the desired stylesheet.
 
+#### CSS Best Practices: Selectors
+
+1. In general, we want to _avoid inline styles_ - it's best to keep all your styles
+in one place, on a stylesheet.
+
+1. USE IDs SPARINGLY. IDs should be reserved for emergency situations only,
+when there is no other way to select an element. There are a lot of selectors to
+use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
+
+
 ### Code-Along: Valerie's Veggie Shop
 
 Together we are going to look at our good friend Valerie's proposal for her
