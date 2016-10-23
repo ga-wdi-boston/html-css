@@ -1,10 +1,12 @@
-* {
-  text-align: center;
+body {
   font-family: arial;
   background-color: grey;
+  width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
+  text-align: center;
   color: rgb(149, 69, 53);
   font: 80px cursive;
 }
