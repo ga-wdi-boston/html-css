@@ -4,7 +4,7 @@
 
 ## Objectives
 
-Students should, at the end of the lesson, be able to:
+Developers should, at the end of the lesson, be able to:
 
 -   Write out the basic skeleton of an HTML page.
 -   Add CSS to an HTML file both by using inline styling, `<style>` tags, and by
@@ -330,3 +330,9 @@ Here are some sites you might want to bookmark, if you haven't already.
 -   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 -   [CSS-Tricks](https://css-tricks.com)
 -   [Using the browser to debug CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
+
+## [License](LICENSE)
+
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
