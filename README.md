@@ -277,7 +277,7 @@ At this point, the `master` branch on your GitHub fork should include your new
 HTML page.
 
 Now checkout the `css` branch that you created earlier and style your site using
-the `main.css` file in the `assets/styles/` directory as follows. Don't worry
+the `index.scss` file in the `assets/styles/` directory as follows. Don't worry
 about creating a link tag as the two script tags in the head of `index.html`
 take care of that for you.
 
@@ -293,7 +293,7 @@ about _understanding_ it right now. To get our `css` branch up to date with
 -   Update the `css` branch with `git rebase master`.
 -   If you experience any issues, flag down a consultant.
 
-Now, in your `main.css` file:
+Now, in your `index.scss` file:
 
 -   Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade
 of
