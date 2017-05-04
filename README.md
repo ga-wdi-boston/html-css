@@ -1,10 +1,10 @@
-![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # HTML & CSS Overview
 
 ## Objectives
 
-Students should, at the end of the lesson, be able to:
+Developers should, at the end of the lesson, be able to:
 
 -   Write out the basic skeleton of an HTML page.
 -   Add CSS to an HTML file both by using inline styling, `<style>` tags, and by
@@ -178,11 +178,17 @@ in one place, on a stylesheet.
 when there is no other way to select an element. There are a lot of selectors to
 use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
 
+#### Broswer Template
+
+At this point, it is probably helpful to introduce you to the Browser Template that you will be using in many of your projects. There may be a few things happening in here that you're not familiar with (and that's okay), but the most impotant thing to understand about the Browser Template is how it is structured in order to add styles to your HTML.
+
+I know we just showed you three distinct ways to add CSS to a page, but things are done a little bit differently in the Browser Template. This repo actually relies on said template, so let's take a look at how we would add styling to the example HTML page within. (Note, we will have to use `grunt serve` in order to view this page in our browser).
+
 
 ### Code-Along: Valerie's Veggie Shop
 
 Together we are going to look at our good friend Valerie's proposal for her
-website. Valerie has been so gracious to provide us with what he wants to be
+website. Valerie has been so gracious to provide us with what she wants to be
 included on her website. Since Valerie has spent her entire life practicing the
 ancient art of 'chopping up veggies', she is not a technology oriented gal.
 Let's help out our good friend Valerie!
@@ -271,7 +277,7 @@ At this point, the `master` branch on your GitHub fork should include your new
 HTML page.
 
 Now checkout the `css` branch that you created earlier and style your site using
-the `main.css` file in the `assets/styles/` directory as follows. Don't worry
+the `index.scss` file in the `assets/styles/` directory as follows. Don't worry
 about creating a link tag as the two script tags in the head of `index.html`
 take care of that for you.
 
@@ -287,7 +293,7 @@ about _understanding_ it right now. To get our `css` branch up to date with
 -   Update the `css` branch with `git rebase master`.
 -   If you experience any issues, flag down a consultant.
 
-Now, in your `main.css` file:
+Now, in your `index.scss` file:
 
 -   Make the recipe title ("The Best Chocolate Chip Cookies") match [this shade
 of
@@ -330,3 +336,9 @@ Here are some sites you might want to bookmark, if you haven't already.
 -   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 -   [CSS-Tricks](https://css-tricks.com)
 -   [Using the browser to debug CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
+
+## [License](LICENSE)
+
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
