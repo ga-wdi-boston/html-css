@@ -162,10 +162,10 @@ To add CSS to a page, either include it
 
 1.  Inline, within an element.
 
-1.  Between two `<style>` tags, typically in the the `<head>` of the document.
+1.  Between two `<style>` tags, typically in the `<head>` of the document.
 
 1.  **Most Common** In a separate file referred to by a `<link>` tag, also
-typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
+typically in the `<head>`. The syntax for using a `<link>` tag is `<link
 rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
 location of the desired stylesheet.
 
